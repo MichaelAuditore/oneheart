@@ -52,7 +52,7 @@ function postMessage() {
   const name = $("#name").val();
   const message = $("#message").val();
 
-  if (!!name || !!message) {
+  if (name === "" || message === "") {
     return;
   }
   const headers = {
