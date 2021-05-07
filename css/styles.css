@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.modal-body {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-body img {
+  width: 375px;
+}
+
+#cases {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  margin: 1rem;
+}
+
+#cases td,
+#cases th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#cases tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#cases tr:hover {
+  background-color: #ddd;
+}
+
+#cases th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d25525;
+  color: white;
+}
+
+.modal-body .post-card {
+  width: 50%;
+  margin: 5% auto;
+  padding: 0;
+}
+
+.banner,
+.banner > img {
+  width: 100%;
+}
+
+body {
+  background-image: url(../img/heartlogo.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100%;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+::-webkit-scrollbar {
+  background: #d25525;
+  width: 5px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar:hover {
+  background: #c53a04;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar:active {
+  background-color: #d25525;
+}
+
+.hide-heading {
+  display: none;
+}
+
+.post {
+  margin: 5rem 0 !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+textarea {
+  height: 200px !important;
+}
+
+input,
+textarea {
+  width: 330px;
+  float: right;
+  height: 25px;
+  margin-top: 5px !important;
+  text-align: center;
+  text-indent: 5px;
+  font-size: 12.6pt;
+  border-radius: 5px;
+  border: solid 1.5px #d3d3d3;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+  opacity: 0.7;
+  margin-bottom: 1rem !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+input[type="text"]:hover {
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+
+.one-button {
+  border-radius: 0.2rem;
+  width: 100px;
+  height: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #d25525;
+  border-color: #e2541c;
+  cursor: pointer;
+}
+
+.one-button:hover {
+  background-color: #e2541c;
+}
+
+.posts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin-bottom: 5rem !important;
+}
+
+.post-card {
+  background-color: #e9ecef;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  width: 50%;
+}
+
+.post-card section {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.measurements {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+p {
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: max-content;
+  height: 50px;
+}
+
+.color-footer {
+  background-color: #d25525;
+  color: #ffff;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+}
+
+img {
+  width: 258px;
+  height: 200px;
+}
+
+/* Floating button */
+.cov {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0; /* Establecemos la barra en la izquierda */
+  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.cov ul {
+  list-style: none;
+}
+
+.closed {
+  display: none !important;
+}
+
+.open {
+  display: flex !important;
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.close button {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.cov ul li {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #e3b685;
+  padding: 20px 30px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transition: all 500ms ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.info {
+  background-image: url(../img/info.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  .post-card {
+    width: 100%;
+  }
+
+  .modal-body .post-card img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-card {
+    width: 20%;
+  }
+
+  .measurements .post-card {
+    text-align: justify;
+  }
+}

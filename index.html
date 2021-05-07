@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneHeart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="post">
+        <article class="card">
+            <h2 class="hide-heading">Card</h2>
+            <section class="form">
+                <h2>Publica tu mensaje</h2>
+                <div>
+                    <label for="message">Tu nombre:</label>
+                    <br>
+                    <input id="name" type="text" name="name" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="message">Tu mensaje:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button class="one-button" onclick="postMessage()" type="button">
+                    Publicar
+                </button>
+            </section>
+        </article>
+    </div>
+
+    <div class="posts">
+
+    </div>
+
+    <div class="cov">
+        <ul>
+            <li class="info" onclick="openModal()">
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal closed">
+
+        <div class="modal-body">
+            <div class="post-card">
+                <div class="close">
+                    <button onclick="closeModal()">&#120;</button>
+                </div>
+                <img src="./img/info.jpg" alt="Info">
+                <table id="cases">
+                    <caption>Latest COVID information</caption>
+                    <thead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="measurements">
+        <div class="post-card">
+            <img src="./img/distance.png" alt="Distance">
+            <p>Recuerda mantener una distancia minima de 1.5 metros con otra persona</p>
+            <p>Remember to keep a 5ft minimum distance with another person</p>
+        </div>
+        <div class="post-card">
+            <img src="./img/mask.png" alt="Mask">
+            <p>Recuerda usar tapabocas cuando estés con un grupo de personas</p>
+            <p>Remember to wear a face mask when you're with crowd or group of people</p>
+        </div>
+        <div class="post-card">
+            <img src="./img/washing.png" alt="Washing">
+            <p>Recuerda el lavado de manos antes y después de comer e ir al baño</p>
+            <p>Remember to hand washing before and after eat or go inside to bathroom</p>
+        </div>
+        <div class="post-card">
+            <img src="./img/sanitizer.png" alt="Sanitizer">
+            <p>Recuerda aplicarte gel antibacterial</p>
+            <p>Remember to use Hand Sanitizer</p>
+        </div>
+    </div>
+
+    <footer class="color-footer">
+        <p>©Creado por Miguel Angel Parada Cañon</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/requests.js"></script>
+</body>
+
+
+</html>
