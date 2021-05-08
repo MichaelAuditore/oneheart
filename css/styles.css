@@ -54,7 +54,7 @@ body {
 }
 
 .modal-body .post-card {
-  width: 50%;
+  width: 95%;
   margin: 5% auto;
   padding: 0;
 }
@@ -283,6 +283,10 @@ img {
   .modal-body .post-card img {
     width: 50%;
     height: 50%;
+  }
+
+  .modal-body .post-card {
+    width: 95%;
   }
 }
 
